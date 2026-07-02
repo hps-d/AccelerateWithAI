@@ -1,0 +1,13 @@
+source_table,source_column,target_table,target_column,transformation_type,transformation_logic
+products_silver,,gold_layer,pk_gold_id,surrogate_key,Auto-generated sequential surrogate primary key starting from 1
+sales_data_silver,product_id,gold_layer,product_id,passthrough,
+sales_data_silver,store_id,gold_layer,store_id,passthrough,
+sales_data_silver,sales_amount,gold_layer,sales_amount,passthrough,
+sales_data_silver,sales_date,gold_layer,sales_date,date_format,yyyy-MM
+sales_data_silver,sales_date,gold_layer,sales_date_qtr,date_format,yyyy-Q
+sales_data_silver,product_id,gold_layer,product_id,join,products_silver.product_id
+sales_data_silver,store_id,gold_layer,store_id,join,stores_silver.store_id
+sales_data_silver,sales_amount,gold_layer,total_sales,aggregate,sum
+sales_data_silver,sales_amount,gold_layer,avg_sales,aggregate,avg
+sales_data_silver,sales_date,gold_layer,sales_q4,aggregate,sum where sales_date_qtr = 4
+products_silver,product_category,gold_layer,product_category,rename,product_category

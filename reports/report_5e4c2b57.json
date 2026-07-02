@@ -1,0 +1,140 @@
+{
+  "summary": {
+    "business_intent": "Which product category had the highest sales in Q4?",
+    "tables_analyzed": [
+      "gold_layer"
+    ],
+    "summary_lines": [
+      "Table: gold_layer | Rows: 174",
+      "  Top product_id: P018 with pk_gold_id=1818.00",
+      "  Numeric columns analyzed: 7 columns"
+    ]
+  },
+  "analysis": {
+    "gold_layer": {
+      "schema": [
+        {
+          "column_name": "pk_gold_id",
+          "column_type": "BIGINT",
+          "null": "YES",
+          "key": null,
+          "default": null,
+          "extra": null
+        },
+        {
+          "column_name": "pk_products_silver_id",
+          "column_type": "BIGINT",
+          "null": "YES",
+          "key": null,
+          "default": null,
+          "extra": null
+        },
+        {
+          "column_name": "product_id",
+          "column_type": "VARCHAR",
+          "null": "YES",
+          "key": null,
+          "default": null,
+          "extra": null
+        },
+        {
+          "column_name": "_load_timestamp",
+          "column_type": "VARCHAR",
+          "null": "YES",
+          "key": null,
+          "default": null,
+          "extra": null
+        },
+        {
+          "column_name": "_source_file",
+          "column_type": "VARCHAR",
+          "null": "YES",
+          "key": null,
+          "default": null,
+          "extra": null
+        },
+        {
+          "column_name": "pk_sales_data_silver_id",
+          "column_type": "BIGINT",
+          "null": "YES",
+          "key": null,
+          "default": null,
+          "extra": null
+        },
+        {
+          "column_name": "store_id",
+          "column_type": "VARCHAR",
+          "null": "YES",
+          "key": null,
+          "default": null,
+          "extra": null
+        }
+      ],
+      "row_count": 174,
+      "top_groups": [
+        {
+          "product_id": "P018",
+          "total": 1818.0
+        },
+        {
+          "product_id": "P014",
+          "total": 1617.0
+        },
+        {
+          "product_id": "P020",
+          "total": 1530.0
+        },
+        {
+          "product_id": "P016",
+          "total": 1463.0
+        },
+        {
+          "product_id": "P019",
+          "total": 1292.0
+        },
+        {
+          "product_id": "P012",
+          "total": 1045.0
+        },
+        {
+          "product_id": "P017",
+          "total": 994.0
+        },
+        {
+          "product_id": "P013",
+          "total": 836.0
+        },
+        {
+          "product_id": "P011",
+          "total": 684.0
+        },
+        {
+          "product_id": "P008",
+          "total": 630.0
+        },
+        {
+          "product_id": "P015",
+          "total": 625.0
+        },
+        {
+          "product_id": "P007",
+          "total": 492.0
+        },
+        {
+          "product_id": "P005",
+          "total": 484.0
+        },
+        {
+          "product_id": "P006",
+          "total": 428.0
+        },
+        {
+          "product_id": "P010",
+          "total": 395.0
+        }
+      ],
+      "group_col": "product_id",
+      "value_col": "pk_gold_id"
+    }
+  }
+}
