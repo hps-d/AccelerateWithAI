@@ -404,3 +404,121 @@
 2026-07-02 13:20:51,506 [REPORTER] Built 12 charts
 2026-07-02 13:20:51,516 [REPORTER] Report saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\reports\report_ccea98da.html
 2026-07-02 13:20:51,517 [ORCHESTRATOR] Reporter done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\reports\report_ccea98da.html
+2026-07-10 16:12:03,704 [ORCHESTRATOR] Phase 1 start run_id=441dcc10-0751-4422-be11-5db25671408c
+2026-07-10 16:12:03,704 [ORCHESTRATOR] Running profiler
+2026-07-10 16:12:14,218 [PROFILER] Starting run_id=441dcc10-0751-4422-be11-5db25671408c files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\products.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\sales_data.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\stores.csv']
+2026-07-10 16:12:17,972 [PROFILER] Profile saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\profiles\profile_combined_20260710_161217.json
+2026-07-10 16:12:18,427 [PROFILER] Done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\profiles\profile_combined_20260710_161217.json
+2026-07-10 16:12:18,428 [ORCHESTRATOR] Profiler done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\profiles\profile_combined_20260710_161217.json
+2026-07-10 16:12:18,428 [ORCHESTRATOR] Generating Bronze STTM
+2026-07-10 16:12:18,441 [STTM] Starting BRONZE STTM for run_id=441dcc10-0751-4422-be11-5db25671408c
+2026-07-10 16:12:20,169 [STTM] BRONZE STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_bronze_441dcc10.csv (6 rows)
+2026-07-10 16:12:46,771 [STTM] BRONZE STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_bronze_441dcc10.csv
+2026-07-10 16:12:46,772 [ORCHESTRATOR] Bronze STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_bronze_441dcc10.csv
+2026-07-10 16:13:14,033 [ORCHESTRATOR] Phase 2 start run_id=441dcc10-0751-4422-be11-5db25671408c
+2026-07-10 16:13:14,033 [ORCHESTRATOR] Running Bronze execution
+2026-07-10 16:13:14,051 [BRONZE] Starting run_id=441dcc10-0751-4422-be11-5db25671408c, files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\products.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\sales_data.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\stores.csv']
+2026-07-10 16:13:14,482 [BRONZE] products.csv -> products_bronze.parquet (20 rows x 6 cols)
+2026-07-10 16:13:14,492 [BRONZE] sales_data.csv -> sales_data_bronze.parquet (186 rows x 13 cols)
+2026-07-10 16:13:14,498 [BRONZE] stores.csv -> stores_bronze.parquet (10 rows x 7 cols)
+2026-07-10 16:13:14,499 [BRONZE] Done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\products_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\sales_data_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\stores_bronze.parquet']
+2026-07-10 16:13:14,500 [ORCHESTRATOR] Bronze execution done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\products_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\sales_data_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\stores_bronze.parquet']
+2026-07-10 16:13:14,500 [ORCHESTRATOR] Generating Silver STTM
+2026-07-10 16:13:14,500 [STTM] Starting SILVER STTM for run_id=441dcc10-0751-4422-be11-5db25671408c
+2026-07-10 16:13:17,033 [STTM] SILVER STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_441dcc10.csv (21 rows)
+2026-07-10 16:13:52,422 [STTM] SILVER STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_441dcc10.csv
+2026-07-10 16:13:52,423 [ORCHESTRATOR] Silver STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_441dcc10.csv
+2026-07-10 16:14:34,831 [ORCHESTRATOR] Phase 3 start run_id=441dcc10-0751-4422-be11-5db25671408c
+2026-07-10 16:14:34,831 [ORCHESTRATOR] Running Silver execution
+2026-07-10 16:14:34,853 [SILVER] Starting run_id=441dcc10-0751-4422-be11-5db25671408c, files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\products_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\sales_data_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\stores_bronze.parquet']
+2026-07-10 16:14:34,884 [SILVER] products_bronze.parquet -> products_silver.parquet (20 rows x 5 cols)
+2026-07-10 16:14:34,902 [SILVER] sales_data_bronze.parquet -> sales_data_silver.parquet (174 rows x 5 cols)
+2026-07-10 16:14:34,916 [SILVER] stores_bronze.parquet -> stores_silver.parquet (10 rows x 5 cols)
+2026-07-10 16:14:34,918 [SILVER] Done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\products_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\sales_data_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\stores_silver.parquet']
+2026-07-10 16:14:34,919 [ORCHESTRATOR] Silver execution done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\products_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\sales_data_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\stores_silver.parquet']
+2026-07-10 16:14:34,919 [ORCHESTRATOR] Generating Gold STTM
+2026-07-10 16:14:34,920 [STTM] Starting GOLD STTM for run_id=441dcc10-0751-4422-be11-5db25671408c
+2026-07-10 16:14:37,381 [STTM] GOLD STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_gold_441dcc10.csv (22 rows)
+2026-07-10 16:14:46,016 [STTM] GOLD STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_gold_441dcc10.csv
+2026-07-10 16:14:46,016 [ORCHESTRATOR] Gold STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_gold_441dcc10.csv
+2026-07-10 16:15:26,549 [ORCHESTRATOR] Phase 4 start run_id=441dcc10-0751-4422-be11-5db25671408c
+2026-07-10 16:15:26,549 [ORCHESTRATOR] Running Gold execution
+2026-07-10 16:15:26,570 [GOLD] Starting run_id=441dcc10-0751-4422-be11-5db25671408c, files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\products_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\sales_data_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\stores_silver.parquet']
+2026-07-10 16:15:26,580 [GOLD] Loaded Silver table 'products_silver': (20, 5)
+2026-07-10 16:15:26,583 [GOLD] Loaded Silver table 'sales_data_silver': (174, 5)
+2026-07-10 16:15:26,588 [GOLD] Loaded Silver table 'stores_silver': (10, 5)
+2026-07-10 16:15:26,593 [GOLD] Building target table 'products_gold' (7 rules)
+2026-07-10 16:15:26,617 [GOLD] Created 'products_gold': 174 rows x 7 cols
+2026-07-10 16:15:26,618 [GOLD] Building target table 'sales_data_gold' (12 rules)
+2026-07-10 16:15:26,626 [GOLD] Created 'sales_data_gold': 174 rows x 6 cols
+2026-07-10 16:15:26,627 [GOLD] Building target table 'stores_gold' (3 rules)
+2026-07-10 16:15:26,634 [GOLD] Created 'stores_gold': 174 rows x 5 cols
+2026-07-10 16:15:26,636 [GOLD] Done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\products_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\sales_data_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\stores_gold.parquet']
+2026-07-10 16:15:26,637 [ORCHESTRATOR] Gold execution done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\products_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\sales_data_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\stores_gold.parquet']
+2026-07-10 16:15:26,637 [ORCHESTRATOR] Running reporter
+2026-07-10 16:15:27,609 [REPORTER] Starting run_id=441dcc10-0751-4422-be11-5db25671408c gold_files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\products_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\sales_data_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\stores_gold.parquet']
+2026-07-10 16:15:27,661 [REPORTER] Loaded tables: ['products_gold', 'sales_data_gold', 'stores_gold']
+2026-07-10 16:15:27,705 [REPORTER] Analysis complete
+2026-07-10 16:15:31,243 [REPORTER] Built 12 charts
+2026-07-10 16:15:31,250 [REPORTER] Report saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\reports\report_441dcc10.html
+2026-07-10 16:15:31,250 [ORCHESTRATOR] Reporter done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\reports\report_441dcc10.html
+2026-07-10 16:30:20,158 [ORCHESTRATOR] Phase 1 start run_id=0a994251-049d-449b-8e30-b65d0efecdce
+2026-07-10 16:30:20,159 [ORCHESTRATOR] Running profiler
+2026-07-10 16:30:27,141 [PROFILER] Starting run_id=0a994251-049d-449b-8e30-b65d0efecdce files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\products.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\sales_data.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\stores.csv']
+2026-07-10 16:30:31,471 [PROFILER] Profile saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\profiles\profile_combined_20260710_163031.json
+2026-07-10 16:30:31,929 [PROFILER] Done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\profiles\profile_combined_20260710_163031.json
+2026-07-10 16:30:31,930 [ORCHESTRATOR] Profiler done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\profiles\profile_combined_20260710_163031.json
+2026-07-10 16:30:31,930 [ORCHESTRATOR] Generating Bronze STTM
+2026-07-10 16:30:31,941 [STTM] Starting BRONZE STTM for run_id=0a994251-049d-449b-8e30-b65d0efecdce
+2026-07-10 16:30:34,410 [STTM] BRONZE STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_bronze_0a994251.csv (12 rows)
+2026-07-10 16:31:06,175 [STTM] BRONZE STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_bronze_0a994251.csv
+2026-07-10 16:31:06,175 [ORCHESTRATOR] Bronze STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_bronze_0a994251.csv
+2026-07-10 16:31:31,487 [ORCHESTRATOR] Phase 2 start run_id=0a994251-049d-449b-8e30-b65d0efecdce
+2026-07-10 16:31:31,487 [ORCHESTRATOR] Running Bronze execution
+2026-07-10 16:31:31,507 [BRONZE] Starting run_id=0a994251-049d-449b-8e30-b65d0efecdce, files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\products.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\sales_data.csv', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\landing\\stores.csv']
+2026-07-10 16:31:31,861 [BRONZE] products.csv -> products_bronze.parquet (20 rows x 6 cols)
+2026-07-10 16:31:31,872 [BRONZE] sales_data.csv -> sales_data_bronze.parquet (186 rows x 13 cols)
+2026-07-10 16:31:31,880 [BRONZE] stores.csv -> stores_bronze.parquet (10 rows x 7 cols)
+2026-07-10 16:31:31,881 [BRONZE] Done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\products_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\sales_data_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\stores_bronze.parquet']
+2026-07-10 16:31:31,882 [ORCHESTRATOR] Bronze execution done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\products_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\sales_data_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\stores_bronze.parquet']
+2026-07-10 16:31:31,882 [ORCHESTRATOR] Generating Silver STTM
+2026-07-10 16:31:31,883 [STTM] Starting SILVER STTM for run_id=0a994251-049d-449b-8e30-b65d0efecdce
+2026-07-10 16:31:35,074 [STTM] SILVER STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_0a994251.csv (21 rows)
+2026-07-10 16:32:13,868 [STTM] Rate limit hit, retrying in 15s (attempt 1/4)
+2026-07-10 16:32:30,516 [STTM] SILVER STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_0a994251.csv (21 rows)
+2026-07-10 16:32:38,743 [STTM] Rate limit hit, retrying in 30s (attempt 2/4)
+2026-07-10 16:33:10,403 [STTM] SILVER STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_0a994251.csv (21 rows)
+2026-07-10 16:33:18,140 [STTM] SILVER STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_0a994251.csv
+2026-07-10 16:33:18,140 [ORCHESTRATOR] Silver STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_silver_0a994251.csv
+2026-07-10 16:33:57,217 [ORCHESTRATOR] Phase 3 start run_id=0a994251-049d-449b-8e30-b65d0efecdce
+2026-07-10 16:33:57,217 [ORCHESTRATOR] Running Silver execution
+2026-07-10 16:33:57,241 [SILVER] Starting run_id=0a994251-049d-449b-8e30-b65d0efecdce, files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\products_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\sales_data_bronze.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\bronze_layer\\stores_bronze.parquet']
+2026-07-10 16:33:57,285 [SILVER] products_bronze.parquet -> products_silver.parquet (20 rows x 5 cols)
+2026-07-10 16:33:57,319 [SILVER] sales_data_bronze.parquet -> sales_data_silver.parquet (174 rows x 5 cols)
+2026-07-10 16:33:57,338 [SILVER] stores_bronze.parquet -> stores_silver.parquet (10 rows x 5 cols)
+2026-07-10 16:33:57,339 [SILVER] Done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\products_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\sales_data_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\stores_silver.parquet']
+2026-07-10 16:33:57,340 [ORCHESTRATOR] Silver execution done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\products_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\sales_data_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\stores_silver.parquet']
+2026-07-10 16:33:57,341 [ORCHESTRATOR] Generating Gold STTM
+2026-07-10 16:33:57,341 [STTM] Starting GOLD STTM for run_id=0a994251-049d-449b-8e30-b65d0efecdce
+2026-07-10 16:34:00,370 [STTM] GOLD STTM saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_gold_0a994251.csv (20 rows)
+2026-07-10 16:34:24,197 [STTM] GOLD STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_gold_0a994251.csv
+2026-07-10 16:34:24,198 [ORCHESTRATOR] Gold STTM done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\data\sttm\sttm_gold_0a994251.csv
+2026-07-10 16:35:00,045 [ORCHESTRATOR] Phase 4 start run_id=0a994251-049d-449b-8e30-b65d0efecdce
+2026-07-10 16:35:00,045 [ORCHESTRATOR] Running Gold execution
+2026-07-10 16:35:00,070 [GOLD] Starting run_id=0a994251-049d-449b-8e30-b65d0efecdce, files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\products_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\sales_data_silver.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\silver_layer\\stores_silver.parquet']
+2026-07-10 16:35:00,079 [GOLD] Loaded Silver table 'products_silver': (20, 5)
+2026-07-10 16:35:00,083 [GOLD] Loaded Silver table 'sales_data_silver': (174, 5)
+2026-07-10 16:35:00,087 [GOLD] Loaded Silver table 'stores_silver': (10, 5)
+2026-07-10 16:35:00,092 [GOLD] Building target table 'products_gold' (3 rules)
+2026-07-10 16:35:00,101 [GOLD] Created 'products_gold': 20 rows x 5 cols
+2026-07-10 16:35:00,102 [GOLD] Building target table 'sales_data_gold' (17 rules)
+2026-07-10 16:35:00,111 [GOLD] Created 'sales_data_gold': 174 rows x 6 cols
+2026-07-10 16:35:00,113 [GOLD] Done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\products_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\sales_data_gold.parquet']
+2026-07-10 16:35:00,114 [ORCHESTRATOR] Gold execution done -> ['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\products_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\sales_data_gold.parquet']
+2026-07-10 16:35:00,114 [ORCHESTRATOR] Running reporter
+2026-07-10 16:35:00,948 [REPORTER] Starting run_id=0a994251-049d-449b-8e30-b65d0efecdce gold_files=['C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\products_gold.parquet', 'C:\\Users\\hharikrishnan\\Desktop\\AccelerateAI\\AccelerateAI\\data\\gold_layer\\sales_data_gold.parquet']
+2026-07-10 16:35:01,020 [REPORTER] Loaded tables: ['products_gold', 'sales_data_gold']
+2026-07-10 16:35:01,059 [REPORTER] Analysis complete
+2026-07-10 16:35:04,804 [REPORTER] Built 8 charts
+2026-07-10 16:35:04,813 [REPORTER] Report saved -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\reports\report_0a994251.html
+2026-07-10 16:35:04,814 [ORCHESTRATOR] Reporter done -> C:\Users\hharikrishnan\Desktop\AccelerateAI\AccelerateAI\reports\report_0a994251.html
